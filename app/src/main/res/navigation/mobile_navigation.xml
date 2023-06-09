@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_about">
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="or.shani.revoviewfinalprojact.ui.about.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_tv_shows"
+        android:name="or.shani.revoviewfinalprojact.ui.tvShows.TVShowsFragment"
+        android:label="TV Shows" >
+        <action
+            android:id="@+id/action_nav_tv_shows_to_overViewFragment"
+            app:destination="@id/nav_over_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_over_view"
+        android:name="or.shani.revoviewfinalprojact.ui.overview.OverViewFragment"
+        android:label="Overview" />
+    <fragment
+        android:id="@+id/nav_soon"
+        android:name="or.shani.revoviewfinalprojact.ui.soon.SoonOutFragment"
+        android:label="Soon Out"
+        tools:layout="@layout/fragment_soon_out" >
+        <action
+            android:id="@+id/action_soonOutFragment_to_nav_over_view"
+            app:destination="@id/nav_over_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_movies"
+        android:name="or.shani.revoviewfinalprojact.ui.movies.MoviesFragment"
+        android:label="Movies"
+        tools:layout="@layout/fragment_movies" >
+        <action
+            android:id="@+id/action_moviesFragment_to_nav_over_view"
+            app:destination="@id/nav_over_view" />
+    </fragment>
+</navigation>

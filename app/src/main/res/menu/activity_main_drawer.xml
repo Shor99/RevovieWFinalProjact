@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_question_mark_24"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/baseline_movie_24"
+            android:title="@string/movies" />
+        <item
+            android:id="@+id/nav_tv_shows"
+            android:icon="@drawable/baseline_slideshow_24"
+            android:title="@string/tv_shows" />
+        <item
+            android:id="@+id/nav_soon"
+            android:icon="@drawable/baseline_timer_24"
+            android:title="@string/upcoming" />
+
+    </group>
+</menu>
